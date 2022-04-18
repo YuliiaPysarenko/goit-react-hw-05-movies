@@ -1,0 +1,16 @@
+.reviewList {
+    list-style: none;
+    padding: 0;
+}
+
+.reviewItem {
+    margin: 10px;
+    background: #f5f5f5;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.reviewsListEmpty {
+    margin-top: 30px;
+    text-align: center;
+}

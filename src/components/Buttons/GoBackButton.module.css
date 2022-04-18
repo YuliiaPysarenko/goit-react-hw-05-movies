@@ -1,0 +1,11 @@
+.GoBackButton {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    background: #fff;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}

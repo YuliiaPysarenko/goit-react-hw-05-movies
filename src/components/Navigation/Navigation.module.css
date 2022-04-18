@@ -1,0 +1,30 @@
+.Navigation {
+    top: 0;
+    position: sticky;
+    padding: 10px;
+    /* width: 100%; */
+    z-index: 1100;
+}
+
+.link {
+    padding: 10px 0;
+    display: inline-block;
+    color: #e5e5ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link:hover, .link:focus {
+    color: #fff;
+}
+
+.link:not(:last-child) {
+    margin-right: 40px;
+}
+
+.activeLink {
+    /* font-weight: 500; */
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}

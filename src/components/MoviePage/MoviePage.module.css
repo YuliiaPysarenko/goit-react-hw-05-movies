@@ -1,0 +1,38 @@
+.movie {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+
+.movieImage {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+
+@media (min-width: 500px) {
+    .movieImage {
+        float: left;
+    }   
+}
+
+.details {
+    display: inline-block;
+}
+
+.additional {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link {
+    padding: 20px 0;
+    margin: 5px;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+}
+
+.activeLink {
+    background: #efefef;
+}

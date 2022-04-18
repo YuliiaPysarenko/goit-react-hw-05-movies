@@ -7,9 +7,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  overflow: scroll;
+}
+
+#root {
+  position: relative;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.notFound__block {
+  height: 100%;
+  margin-top: 30%;
+}
+
+.notFound__text {
+  margin: 0;
+  text-align: center;
 }
