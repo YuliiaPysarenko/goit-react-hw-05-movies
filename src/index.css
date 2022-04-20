@@ -29,3 +29,7 @@ code {
   margin: 0;
   text-align: center;
 }
+
+.notFound__notification {
+  margin-top: 10rem;
+}

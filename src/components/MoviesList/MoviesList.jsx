@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './MoviesList.module.css';
 
-export default function MoviesList( { movies }) {
+export default function MoviesList({ movies }) {
     return (
     <ul className={styles.moviesList}>
         {movies.map(movie => 
