@@ -21,14 +21,14 @@ export function MoviesPage() {
     if (queryValue) {
       setRequest(queryValue);
     }
-  }, []);
+  }, [location.search]);
 
   useEffect(() => {
     if (request) {
       setSearchParams({ query: request });
       getMovies(request).then(setMovies);
     }
-  }, [request]);
+  }, [request, setSearchParams]);
 
   return (
     <>
