@@ -9,24 +9,24 @@ export function MoviesPage() {
   let [request, setRequest] = useState(null);
   const [searchParams, setSearchParams] = useSearchParams({});
   const [movies, setMovies] = useState(null);
+  const queryValue = searchParams.get("query");
 
   const submitRequest = keyword => {
     setRequest(keyword);
   };
 
   useEffect(() => {
-    const queryValue = searchParams.get("query");
     if (queryValue) {
       setRequest(queryValue);
     }
-  }, [searchParams]);
+  }, [queryValue]);
 
   useEffect(() => {
     if (request) {
       setSearchParams({ query: request });
       getMovies(request).then(setMovies);
     }
-  }, [request]);
+  }, [request, setSearchParams]);
 
   return (
     <>
