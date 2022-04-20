@@ -19,7 +19,7 @@ export function MoviesPage() {
     if (queryValue) {
       setRequest(queryValue);
     }
-  }, [searchParams]);
+  }, []);
 
   useEffect(() => {
     if (request) {
