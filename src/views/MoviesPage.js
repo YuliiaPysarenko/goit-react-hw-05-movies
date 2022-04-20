@@ -19,14 +19,14 @@ export function MoviesPage() {
     if (queryValue) {
       setRequest(queryValue);
     }
-  }, []);
+  }, [searchParams]);
 
   useEffect(() => {
     if (request) {
       setSearchParams({ query: request });
       getMovies(request).then(setMovies);
     }
-  }, [request, setSearchParams]);
+  }, [request]);
 
   return (
     <>
