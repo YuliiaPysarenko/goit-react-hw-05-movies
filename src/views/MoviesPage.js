@@ -1,5 +1,5 @@
 import { useState, useEffect, Suspense } from 'react';
-import { useLocation, useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import Heading from '../components/Heading/Heading';
 import Searchbar from '../components/Searchbar/Searchbar';
 import MoviesList from '../components/MoviesList/MoviesList';
@@ -10,18 +10,16 @@ export function MoviesPage() {
   const [searchParams, setSearchParams] = useSearchParams({});
   const [movies, setMovies] = useState(null);
 
-  let location = useLocation();
-
   const submitRequest = keyword => {
     setRequest(keyword);
   };
 
   useEffect(() => {
-    const queryValue = new URLSearchParams(location.search).get('query');
+    const queryValue = searchParams.get("query");
     if (queryValue) {
       setRequest(queryValue);
     }
-  }, [location.search]);
+  }, [searchParams]);
 
   useEffect(() => {
     if (request) {
